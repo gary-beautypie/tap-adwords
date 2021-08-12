@@ -241,6 +241,7 @@ def sync_report(stream_name, stream_metadata, sdk_client):
                                  'last_attribution_window_date',
                                  start_date.strftime(utils.DATETIME_FMT))
         singer.write_state(STATE)
+        time.sleep(3)
     bookmarks.clear_bookmark(STATE,
                              state_key_name(customer_id, stream_name),
                              'last_attribution_window_date')
