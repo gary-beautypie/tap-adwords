@@ -43,5 +43,4 @@ setup(name='tap-adwords',
           ],
       },
       include_package_data=True,
-      use_2to3=False,
 )
